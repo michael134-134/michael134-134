@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rabbits</title>
+    <meta charset="utf-8">
+
+
+    <script>
+
+        // A function used to change background color of the whole webpage
+        function changeParagraph(){
+            document.getElementById("basic-definition").innerHTML="Rabbits are small mammals in the family Leporidae (along with the hare) of the order Lagomorpha (along with the pika). Oryctolagus cuniculus includes the European rabbit species and its descendants, the world's 305 breeds[1] of domestic rabbit. Sylvilagus includes 13 wild rabbit species, among them the seven types of cottontail. The European rabbit, which has been introduced on every continent except Antarctica, is familiar throughout the world as a wild prey animal and as a domesticated form of livestock and pet. With its widespread effect on ecologies and cultures, the rabbit (or bunny) is, in many areas of the world, a part of daily life—as food, clothing, a companion, and a source of artistic inspiration.\n" +
+                "\n" +
+                "Although once considered rodents, lagomorphs like rabbits have been discovered to have diverged separately and earlier than their rodent cousins and have a number of traits rodents lack, like two extra incisors.";
+        }
+
+        //function changeBackground(){
+           // document.getElementsByName("body").
+       // }
+
+
+
+    </script>
+
+
+    <style>
+        <link rel="stylesheet" href="CSS1.css">
+    </style>
+</head>
+
+<body>
+
+<div class="mainheader">
+    <h1>Rabbits Are fun!</h1>
+</div>
+
+<div id="content-table">
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#basic-definition">Basic Definition</a></li>
+        <li style="text-decoration:underline; font-weight:normal; "><a href="#size">Size</a></li>
+        <li><a href="#diet">Diet</a></li>
+    </ol>
+</div>
+
+<h2 class="red header">Basic Definition</h2>
+
+<img  id="first-pic" src="https://cdn.mos.cms.futurecdn.net/65xDQxBV26qkgupGHbJSSZ-970-80.jpg.webp" alt="small rabbit" style="width:200px;">
+<button type="button" onclick='getElementById("first-pic").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSamyxTDAB2yrFy1llZPu7ydpuMvbUZbT-CUg&usqp=CAU"'>Change Image</button>
+<br>
+<button type="button" onclick='getElementById("first-pic").style="width:500px"'>Change Size</button>
+<br>
+<button type="button" onclick='getElementById("first-pic").display="none"'>Hide Image</button>
+<br>
+<button id="change-bgc" type="button" onclick="changeParagraph()">Change Paragraph</button>
+
+<p id="basic-definition">Rabbits are small mammals with fluffy, short tails, whiskers and distinctive long ears. <strong class="red">There are more than 30 species around the world</strong>, and while they live in many different environments, they have many things in common.
+
+    Rabbits and hares are in the same taxonomic family, Leporidae, but they are in different genera. There are 11 genera within the family, but the term “true hares” refers only to species in the genus Lepus; all others are rabbits. Also, the American Rabbit Breeders Association (ARBA) recognizes 49 rabbit breeds.</p>
+
+<div id="related-links">
+    <h2 class="header">For more info use the following links:</h2>
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Main_Page" >wikipedia</a>
+</div>
+
+<div class="footer">
+        <p id="contact-info">Contact us for more info at 98-9337691154</p>
+    <button type="button" onclick='document.getElementById("contact-info").style.fontSize="35px"'>Change Size</button>
+    <br>
+    <button type="button" onclick="document.getElementById('contact-info').style.display='none'">Hide Info</button>
+    <br>
+    <button type="button"  onclick='document.getElementById("contact-info").style.display="block"'>Show Info</button>
+    <p id="demo">JavaScript can change HTML content.</p>
+
+    <button type="button" onclick="document.getElementById('contact-info').innerHTML = 'All about rabbits'">Change Info</button>
+    <br>
+    <button type="button" onclick="changetextcolor()">Change Background Color</button>
+
+
+    <script>
+        function changetextcolor(){
+            document.getElementById("contact-info").style.backgroundColor="yellow";
+        }
+    </script>
+</div>
+
+
+</body>
+</html>
