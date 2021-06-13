@@ -1,0 +1,142 @@
+body{
+    background-color:grey;
+}
+
+.mainheader{
+    background-color:darkgreen;
+    color:white;
+    padding:5px 10px;
+}
+
+h2, h1{
+    font-family:monospace;
+
+}
+
+h1:hover, h2:hover{
+    background-color:yellow;
+}
+
+body{
+    font-family:sans-serif;
+}
+
+
+#basic-definition{
+    position:relative;
+    top:200px;
+    line-height:1.5em;
+}
+
+#first-pic{
+    width:500px;
+    float:left;
+    border:2px solid black;
+    margin-right:15px;
+    margin-bottom:30px;
+}
+
+
+li{
+    font-weight:bold;
+    line-height:2em;
+}
+
+#content-table{
+    background-color:grey;
+    width:30%;
+    border:5px double black;
+    margin-top:15px;
+
+}
+
+#related-links{
+    clear:right;
+    width:30%;
+
+}
+
+.red{
+    background-color:red;
+}
+
+.header{
+    text-decoration:underline;
+    color:white;
+    background-color:black;
+    height:30%;
+    width:50%;
+}
+
+#related-links h2{
+    font-style:italic;
+    background-color:grey;
+
+
+}
+
+h2.red{
+    border:2px solid blue;
+}
+/* Only change a:link color when you have a good reason! */
+ol li a:link{
+    color:red;
+    text-decoration:none;
+}
+/* Only change a:visited color property when you have a good reason! */
+ol li a:visited{
+    color:green;
+}
+
+a:link{
+    text-decoration:none;
+}
+
+ol li a:hover{
+    background-color:yellow;
+    text-decoration:underline;
+
+}
+
+/* When you press down on an element, like a link */
+ol li a:active{
+    background-color:purple;
+
+}
+
+/*When you focus on a link such as using tab button to change the active tab */
+ol li a:focus{
+    background-color:lightsalmon;
+}
+
+/* Developers normally use the same background-color property for
+a:active, a:hover and a:focus since they all basically do the same thing.
+ */
+
+/* Using CSS grouping to change a property for all three pseudo-classes */
+
+a:hover, a:active, a:focus{
+    background-color:peru;
+    text-decoration:underline;
+}
+
+.footer{
+    background-color:darkgreen;
+    padding:7px;
+    clear:both;
+    color:white;
+    margin-top:90px;
+
+}
+
+button{
+    margin-top:10px;
+}
+
+#change-bgc{
+    float:right;
+}
+
+
+
+
